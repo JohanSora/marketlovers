@@ -1,0 +1,48 @@
+@keyframes ml-login {
+  from {
+    margin-left: 50%;
+    top: 40%;
+    left: -114.5px;
+  }
+
+  to {
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    transform: rotate(360deg) scale(0.5);
+  }
+}
+
+@keyframes ml-login-appear-text {
+  from {
+    opacity: 0;
+  }
+  to {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
