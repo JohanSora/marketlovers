@@ -1,28 +1,16 @@
 @keyframes ml-login {
-  from {
-    margin-left: 50%;
-    top: 40%;
-    left: -114.5px;
-  }
-
   to {
-    top: 0;
-    left: 0;
-    margin-left: 0;
-    transform: rotate(360deg) scale(0.5);
+    transform: scale(1);
+    padding-top: 80px;
   }
 }
 
 @keyframes ml-login-appear-text {
   from {
-    opacity: 0;
+    opacity: 1;
   }
   to {
-    color: white;
-    font-size: 60px;
-    text-align: center;
-    font-weight: 700;
-    opacity: 1;
+    opacity: 0;
   }
 }
 

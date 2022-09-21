@@ -2,31 +2,92 @@
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   .logo-marketlogic {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    position: fixed;
-    margin-left: 50%;
-    top: 40%;
-    left: -114.5px;
+    gap: 30px;
+    width: 100px;
+    transform: scale(2);
+    padding-top: 350px;
     animation-name: ml-login;
     animation-duration: 1s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
-    animation-timing-function: linear;
-    transition-property: all;
-    transition-duration: 1s;
-    gap: 30px;
   }
   .logo-marketlogic::after {
     content: "Marketlovers!";
-    font-size: 1px;
-    opacity: 0;
+    opacity: 1;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    transform: scale(0.8);
     animation-name: ml-login-appear-text;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+  }
+
+  .form-login-screen {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    .form-login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      min-width: 300px;
+      max-width: 500px;
+      height: 350px;
+      font-size: 20px;
+      font-weight: 700;
+      gap: 50px;
+      background-color: #ffffff;
+      padding: 50px;
+      border-radius: 50px;
+      animation-name: appear;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+
+      p {
+        text-shadow: 0px 1px 1px rgb(132, 132, 132);
+        strong {
+          color: #efa220;
+        }
+      }
+
+      form {
+        width: 100%;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        input {
+          height: 35px;
+          border-radius: 15px;
+          padding-left: 10px;
+          border: 1px solid #efa220;
+        }
+
+        button {
+          height: 35px;
+          border-radius: 20px;
+          border: none;
+          box-shadow: 0px 1px 3px black;
+          font-size: 15px;
+          font-weight: 700;
+          background-color: #d0d0d080;
+        }
+        button:hover {
+          background-color: #d0d0d0;
+        }
+      }
+    }
   }
 }

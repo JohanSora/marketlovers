@@ -7,7 +7,10 @@ const Layout = ({ children }: any) => {
   return (
     <>
       <Header />
-      {children}
+      <div className="contain-global">
+        <div className="menu"></div>
+        {children}
+      </div>
       <Footer />
     </>
   );

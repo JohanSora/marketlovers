@@ -4,12 +4,23 @@
 @import "./base/resets";
 
 @import "./pages/Login.scss";
+@import "./pages/Home.scss";
 
 @import "./animations.scss";
 
 .global-login {
   background-image: url("../assets/fondoml3.svg");
+  background: linear-gradient(
+    -45deg,
+    #585857,
+    #d0d0d0,
+    #245970,
+    #7dafba,
+    #cc1d47,
+    #f37021,
+    #efa220
+  );
   background-size: 400% 400%;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  animation: gradient 15s ease infinite;
+  animation: gradient 15s ease-in-out infinite;
+  overflow-y: hidden;
 }
