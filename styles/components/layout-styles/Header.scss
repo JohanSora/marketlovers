@@ -41,11 +41,15 @@ header {
 
   .options {
     .user-space {
+      cursor: pointer;
       display: flex;
       height: 100%;
       align-items: center;
       gap: 10px;
       margin-right: 20px;
+    }
+    .user-space:hover {
+      opacity: 0.7;
     }
   }
 }

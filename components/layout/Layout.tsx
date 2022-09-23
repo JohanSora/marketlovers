@@ -5,7 +5,7 @@ import Header from "./Header";
 import Menu from "./Menu";
 
 const Layout = ({ children }: any) => {
-  const [menu, setMenu] = useState("");
+  const [menu, setMenu] = useState("open");
 
   return (
     <>
