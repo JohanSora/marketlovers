@@ -1,5 +1,6 @@
 @import "./components/layout-styles/Footer.scss";
 @import "./components/layout-styles/Header.scss";
+@import "./components/layout-styles/Layout.scss";
 
 @import "./base/resets";
 
@@ -9,7 +10,6 @@
 @import "./animations.scss";
 
 .global-login {
-  background-image: url("../assets/fondoml3.svg");
   background: linear-gradient(
     -45deg,
     #585857,

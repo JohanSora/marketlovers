@@ -34,3 +34,14 @@
     background-position: 0% 50%;
   }
 }
+
+@keyframes appear-menu {
+  to {
+    width: 350px;
+  }
+}
+@keyframes disappear-menu {
+  to {
+    width: 0;
+  }
+}

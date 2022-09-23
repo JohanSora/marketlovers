@@ -1,14 +1,21 @@
 import type { AppProps } from "next/app";
-import React from "react";
+import React, { useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+import Menu from "./Menu";
 
 const Layout = ({ children }: any) => {
+  const [menu, setMenu] = useState("");
+
   return (
     <>
-      <Header />
+      <Header menu={menu} setMenu={setMenu} />
       <div className="contain-global">
-        <div className="menu"></div>
+        {menu === "open" ? (
+          <Menu menuState={"appear-menu"} />
+        ) : (
+          <Menu menuState={"disappear-menu"} />
+        )}
         {children}
       </div>
       <Footer />
